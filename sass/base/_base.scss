@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap');
+
 *,
 *::before,
 *::after {
@@ -26,4 +28,61 @@ html {
 
 body {
   box-sizing: border-box;
+  min-height: 100vh;
+  // background-color: #f9f9f9;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-nav {
+  background-color: black;
+  height: 4vw;
+  max-height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+
+  &__logo {
+    color: white;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    // border: 1px solid white;
+    width: 20%;
+    a {
+      text-decoration: none;
+      font-size: 1.8rem;
+      color: white;
+    }
+  }
+}
+
+.section-main {
+  background: url("../../assets/images/background-desktop.png") no-repeat center center;
+  background-size: cover;
+  min-height: 90vh;
+
+  &__name-and-title {
+    padding: 15rem 15rem 0 15rem;
+    h2{
+      font-size: 9rem;
+      font-family: 'Roboto';
+      font-weight: 100;
+    }
+
+    h1 {
+      font-size: 12rem;
+      font-weight: 500;
+    }
+
+  }
+}
+
+.section-footer {
+  background-color: black;
+  height: 3vh;
 }
