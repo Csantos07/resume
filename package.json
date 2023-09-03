@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass:compile": "sass src/sass/main.scss dist/main.css",
-    "sass:watch": "sass --watch src/sass/main.scss:dist/main.css"
+    "sass:compile": "sass sass/main.scss dist/main.css",
+    "sass:watch": "sass --watch sass/main.scss:dist/main.css"
   },
   "keywords": [],
   "author": "",
