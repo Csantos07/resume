@@ -67,22 +67,56 @@ body {
   min-height: 90vh;
 
   &__name-and-title {
-    padding: 15rem 15rem 0 15rem;
+    margin: 15rem 15rem 0 15rem;
     h2{
       font-size: 9rem;
-      font-family: 'Roboto';
       font-weight: 100;
+      position: relative;
+      top: -6rem;
+
+      .highlight-orange {
+        color: orange;
+        font-size: 15rem;
+        font-weight: 900;
+        position: relative;
+        top: 1.6rem;
+      }
     }
 
     h1 {
-      font-size: 12rem;
+      font-size: 14rem;
       font-weight: 500;
     }
+  }
 
+  &__call-to-action {
+    // border: 1px solid red;
+    width: 50%;
+    margin: 0 40rem;
+    position: relative;
+    h3 {
+      font-size: 9rem;
+      font-weight: 100;
+    }
+
+    button {
+      padding: 2rem;
+      background-color: black;
+      color: white;
+      border-color: none;
+      outline: none !important; /* Use !important to override any other styles */
+      box-shadow: none; /* Remove any box shadow that may be applied */
+      border: none;
+      font-size: 3rem;
+      border-radius: .5rem;
+      position: absolute;
+      right: 25rem;
+      bottom: 0;
+    }
   }
 }
 
 .section-footer {
   background-color: black;
-  height: 3vh;
+  height: 3vw;
 }
